@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<!-- started at 2;34  20/12 -->
+<html>
+<head>
+
+    <link rel = "stylesheet" type="text/css" href="rps style.css" media="screen"/>
+
+
+    <title>Rock Paper Scissors</title>
+    <meta charset="UTF-8">
+
+
+</head>
+<body>
+
+
+
+
+    <div class="container">
+        <button id="again">Play again!</button> 
+        <center><h1 id="main">MISSION MOON!!!</h1></center>
+        <br><br>
+       <center><h2>Win Rock, Paper,Scissors game to land<br> the rocket on Moon</h2></center> 
+       <div class= 'row1'>
+           <div class= 'col1'>
+               <button id="test"><img id= "pic1" src ="r.png"  alt="rock"></button> 
+              <button id= "test1"><img id= "pic1" src="p.png"  alt="paper"></button>  
+             <button id = "test2"> <img id= "pic1" src="s.png"  alt="scissors"></button>   
+           </div>
+           <br>
+           <h3>Enemy score:  <span id="pccount"></span></h3><br>
+           <h3>Your score:  <span id="usercount"></span></h3><br>
+           <h3> <span id="userrock"></span></h3>
+           <h3><span id="pcrock"></span></h3>
+           <h3>Lives:  <span id="gamecount"></span></h3>
+           <br><br>
+           <h3>You:</h3>
+           
+           <div id="scoreview">
+             <button id="testa"><img id= "pic1" src ="r.png"  alt="rock"></button> 
+            <button id= "testb"><img id= "pic1" src="p.png"  alt="paper"></button>  
+           <button id = "testc"> <img id= "pic1" src="s.png"  alt="scissors"></button>
+           </div>
+           <h3>Enemy:</h3>
+           
+           <div id="scoreview">
+             <button id="testab"><img id= "pic1" src ="r.png"  alt="rock"></button> 
+            <button id= "teste"><img id= "pic1" src="p.png"  alt="paper"></button>  
+           <button id = "testf"> <img id= "pic1" src="s.png"  alt="scissors"></button>
+           </div>
+           <div class= 'col2'>
+                <img id= "pic21" src ="0.jpg"  alt="progress">
+                <img id= "pic22" src ="1.jpg"  alt="progress">
+                <img id= "pic23" src ="2.jpg"  alt="progress">
+                <img id= "pic24" src ="3.jpg"  alt="progress">
+                <img id= "pic25" src ="break.jpg"  alt="progress">
+       </div>
+
+       </div> 
+
+      
+    <script>
+
+        let again = document.getElementById('again');
+        again.onclick = function(){window.location.reload();}
+          //load something when webpage is loaded
+          window.onload= function first(){
+   document.getElementById('box').innerHTML = ('show on page loading');}
+              
+        
+
+  let usercount= 0;
+ document.getElementById('usercount').innerHTML= usercount;
+          function up(){
+              
+   let element2 = document.getElementById('usercount');
+   let value3 = element2.innerHTML;
+    value3++;
+    
+   document.getElementById('usercount').innerHTML = value3; 
+
+
+  if(value3==1){
+    document.getElementById("pic21").style.visibility = "hidden";
+     document.getElementById("pic22").style.visibility = "visible";
+   }
+
+   if(value3==2){
+      
+      document.getElementById("pic23").style.visibility = "visible";
+    }
+
+    if(value3==3){
+
+      document.getElementById("pic24").style.visibility = "visible";
+      document.getElementById("test").disabled = true;
+      document.getElementById("test1").disabled = true;
+      document.getElementById("test2").disabled = true;
+    }
+}
+let pccount = 0;
+document.getElementById('pccount').innerHTML= pccount;
+   function cp(){
+   let element9 = document.getElementById('pccount');
+   let value4 = element9.innerHTML;
+    value4++;
+   
+   document.getElementById('pccount').innerHTML = value4; }
+
+
+   let gamecount = 5;
+document.getElementById('gamecount').innerHTML= gamecount;
+   function gc(){
+   let element10 = document.getElementById('gamecount');
+   let value5 = element10.innerHTML;
+  
+    value5--;
+   
+   document.getElementById('gamecount').innerHTML = value5;
+
+   if(value5  ==0)
+   { document.getElementById("pic25").style.visibility = "visible";
+      document.getElementById("test").disabled = true;
+      document.getElementById("test1").disabled = true;
+      document.getElementById("test2").disabled = true;
+}
+    
+   }
+   
+
+
+
+    const button = document.querySelector('#test');
+
+function test() {
+ 
+   let element = document.getElementById('pcrock');
+   let value = element.innerHTML;
+   value = Math.random();
+
+
+   let element1 = document.getElementById('userrock');
+   let value1 = element1.innerHTML;
+   value1 = Math.random();
+   
+
+
+   if (value1 > value){
+                  up();
+                  
+                document.getElementById("testb").style.visibility = "hidden";
+                document.getElementById("testc").style.visibility = "hidden";
+                document.getElementById("testa").style.visibility = "visible";
+                document.getElementById("testf").style.visibility = "visible";
+                document.getElementById("teste").style.visibility = "hidden";
+                document.getElementById("testab").style.visibility = "hidden";
+              
+             }
+             else{
+                cp();
+            gc();
+                document.getElementById("testb").style.visibility = "hidden";
+                document.getElementById("testc").style.visibility = "hidden";
+                document.getElementById("testa").style.visibility = "visible";
+                document.getElementById("teste").style.visibility = "visible";
+                document.getElementById("testf").style.visibility = "hidden";
+                document.getElementById("testab").style.visibility = "hidden";
+             }
+            
+}
+button.addEventListener('click', test);
+
+
+
+
+
+ 
+
+
+const button1 = document.querySelector('#test1');
+
+function test1() {
+ 
+   let element = document.getElementById('pcrock');
+   let value = element.innerHTML;
+   value = Math.random();
+
+   let element1 = document.getElementById('userrock');
+   let value1 = element1.innerHTML;
+   value1 = Math.random();
+   
+   
+   if (value1 > value){
+                  up();
+                  document.getElementById("testa").style.visibility = "hidden";
+                  document.getElementById("testc").style.visibility = "hidden";
+                document.getElementById("testb").style.visibility = "visible";
+                document.getElementById("testab").style.visibility = "visible";
+                document.getElementById("testf").style.visibility = "hidden";
+                document.getElementById("teste").style.visibility = "hidden";
+
+                
+             }
+             else{
+                cp();
+                gc();
+                document.getElementById("testa").style.visibility = "hidden";
+                document.getElementById("testc").style.visibility = "hidden";
+                document.getElementById("testb").style.visibility = "visible";
+                document.getElementById("testab").style.visibility = "hidden";
+                document.getElementById("testf").style.visibility = "visible";
+                document.getElementById("teste").style.visibility = "hidden";
+             }
+            
+}
+button1.addEventListener('click', test1);
+
+
+
+
+
+
+
+const button2 = document.querySelector('#test2');
+
+function test2() {
+  document.getElementById("testa").style.visibility = "hidden";
+  document.getElementById("testb").style.visibility = "hidden";
+   let element = document.getElementById('pcrock');
+   let value = element.innerHTML;
+   value = Math.random();
+
+   let element1 = document.getElementById('userrock');
+   let value1 = element1.innerHTML;
+   value1 = Math.random();
+   
+   
+   if (value1 > value){
+                  up();
+                  document.getElementById("testa").style.visibility = "hidden";
+                  document.getElementById("testb").style.visibility = "hidden";
+                  document.getElementById("testc").style.visibility = "visible";
+                  document.getElementById("teste").style.visibility = "visible";
+                  document.getElementById("testab").style.visibility = "hidden";
+                  document.getElementById("testf").style.visibility = "hidden";
+             }
+             else{
+                cp();
+                gc();
+                document.getElementById("testa").style.visibility = "hidden";
+                document.getElementById("testb").style.visibility = "hidden";
+                document.getElementById("testc").style.visibility = "visible";
+                document.getElementById("testab").style.visibility = "visible";
+                document.getElementById("teste").style.visibility = "hidden";
+                document.getElementById("testf").style.visibility = "hidden";
+             }
+            
+}
+button2.addEventListener('click', test2);
+
+
+    </script>
+   
+
+    
+    
+    </div>
+
+    <!-- this is to darken the back screen -->
+
+
+</body>
+    
+</html>
+

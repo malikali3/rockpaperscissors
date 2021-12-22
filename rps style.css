@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;    
+}
+.container{
+    background-color: black;
+    width: 800px;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    /* box-sizing: border-box; */
+    overflow: hidden;
+}
+.row1{
+    flex-direction: column-reverse;
+    margin: 50px 0;
+}
+h2{
+  color: #3882F6;
+}
+
+#main{
+  color: beige;
+  font-size: 50px;
+
+}
+
+.col2{
+
+    flex-direction: row;
+    margin: 50px;
+    margin-left: 380px;
+    margin-bottom: 50px;
+    margin-top: -290px;
+
+}
+#pic21{
+    
+    margin: 8px 20px 8px 8px;
+    /* padding: 20px; */
+    height: 280px; 
+    width: 380px; 
+    visibility: visible;
+    position: relative;
+    top: -300px;
+    left: 0px;
+  }
+  #pic22{
+    
+    margin: 8px 20px 8px 8px;
+    /* padding: 20px; */
+    height: 280px; 
+    width: 380px; 
+    visibility: hidden;
+    top: 290px;
+    left: 454px;
+    position: absolute;
+  }
+  #pic23{
+    margin: 8px 20px 8px 8px;
+    /* padding: 20px; */
+    height: 280px; 
+    width: 380px; 
+    visibility: hidden;
+    top: 290px;
+    left: 454px;
+    position: absolute;
+  }
+  #pic24{
+    margin: 8px 20px 8px 8px;
+    /* padding: 20px; */
+    height: 280px; 
+    width: 380px;
+    visibility: hidden; 
+    top: 290px;
+    left: 454px;
+    position: absolute;
+  }
+  #pic25{
+    margin: 8px 20px 8px 8px;
+    /* padding: 20px; */
+    height: 280px; 
+    width: 380px;
+    visibility: hidden;
+    top: 290px;
+    left: 454px;
+    position: absolute;
+  }
+#pic1{
+    border-radius: 12%;
+    border: 5px solid transparent; 
+    margin: 8px 20px 8px 8px;
+    /* padding: 20px; */
+    height: 80px; 
+    width: 80px; 
+  }
+  h3{
+    color: thistle;
+    margin-left: -60px;
+  }
+  #again{
+    border: brown;
+    border-radius: 12px;
+    background-color: orange;
+    background-size: 100%; /* To fill the dimensions of container (button), or */
+    background-size: 80px auto; /* to specify dimensions explicitly */
+    height: 50px; 
+    width: 50px; 
+    margin: 8px 20px 8px 8px;
+    
+  } 
+
+  #u{
+    margin-top: 0px;
+  }
+
+  #testa{
+    border: 0;
+    background-size: 100%; /* To fill the dimensions of container (button), or */
+    background-size: 80px auto; /* to specify dimensions explicitly */
+    height: 80px; 
+    width: 80px; 
+    margin: 8px 20px 8px 8px;
+    background-color: transparent;
+    position: relative;
+    top: -70px;
+    visibility: hidden;
+  }
+  #testab{
+    border: 0;
+    background-size: 100%; /* To fill the dimensions of container (button), or */
+    background-size: 80px auto; /* to specify dimensions explicitly */
+    height: 80px; 
+    width: 80px; 
+    margin: 8px 20px 8px 8px;
+    background-color: transparent;
+    position: relative;
+    top: -70px;
+    visibility: hidden;
+  }
+
+  #testb{
+    border: 0;
+    background-size: 100%; /* To fill the dimensions of container (button), or */
+    background-size: 80px auto; /* to specify dimensions explicitly */
+    height: 80px; 
+    width: 80px; 
+    margin: 8px 20px 8px 8px;
+    background-color: transparent;
+    position: absolute;
+    top: 540px;
+    left: 80px;
+    visibility: hidden;
+  }
+  
+  #teste{
+    border: 0;
+    background-size: 100%; /* To fill the dimensions of container (button), or */
+    background-size: 80px auto; /* to specify dimensions explicitly */
+    height: 80px; 
+    width: 80px; 
+    margin: 8px 20px 8px 8px;
+    background-color: transparent;
+    position: absolute;
+    top: 680px;
+    left: 80px;
+    visibility: hidden;
+  }
+  
+  #testf{
+    border: 0;
+    background-size: 100%; /* To fill the dimensions of container (button), or */
+    background-size: 80px auto; /* to specify dimensions explicitly */
+    height: 80px; 
+    width: 80px; 
+    margin: 8px 20px 8px 8px;
+    background-color: transparent;
+    position: absolute;
+    top: 680px;
+    left: 80px;
+    visibility: hidden;
+  }
+
+  #testc{
+    border: 0;
+    background-size: 100%; /* To fill the dimensions of container (button), or */
+    background-size: 80px auto; /* to specify dimensions explicitly */
+    height: 80px; 
+    width: 80px; 
+    margin: 8px 20px 8px 8px;
+    background-color: transparent;
+    position: absolute;
+    top: 540px;
+    left: 80px;
+    visibility: hidden;
+  }
+  
+ #test{
+    border: 0;
+    background-size: 100%; /* To fill the dimensions of container (button), or */
+    background-size: 80px auto; /* to specify dimensions explicitly */
+    height: 80px; 
+    width: 80px; 
+    margin: 8px 20px 8px 8px;
+    background-color: transparent;
+  } 
+  
+  #test1{
+    border: 0;
+    background-size: 100%; /* To fill the dimensions of container (button), or */
+    background-size: 80px auto; /* to specify dimensions explicitly */
+    height: 80px; 
+    width: 80px; 
+    margin: 8px 20px 8px 8px;
+    background-color: transparent;
+  } 
+
+  #test2{
+    border: 0;
+    background-size: 100%; /* To fill the dimensions of container (button), or */
+    background-size: 80px auto; /* to specify dimensions explicitly */
+    height: 80px; 
+    width: 80px; 
+    margin: 8px 20px 8px 8px;
+    background-color: transparent;
+  } 
+
+
+.col1{
+    flex-direction: row;
+    margin: 50px;
+    margin-left: -80px;
+}
+
+.box{
+    background-color: white;
+    width: 200px;
+    min-height: 200px;
+    padding-left: 8%;
+    padding-right: 8%;
+    border: blueviolet;
+    border: 5px solid #3882F6; 
+    /* box-sizing: border-box; */
+    overflow: hidden;
+}
+
+
+
+
